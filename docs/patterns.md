@@ -6,6 +6,8 @@ title: "基本同步模式"
 
 <div class="chap-en">Basic Synchronization Patterns</div>
 
+<div class="chap-en">Basic Synchronization Patterns</div>
+
 本章介绍一系列基本的同步问题，并展示如何用信号量来解决它们。这些问题包括我们已经见过的串行化和互斥，以及另外一些。
 
 ## 发信号

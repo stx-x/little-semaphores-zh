@@ -6,6 +6,8 @@ title: "导论"
 
 <div class="chap-en">Introduction</div>
 
+<div class="chap-en">Introduction</div>
+
 日常用语里，「同步」指的是让两件事同时发生。在计算机系统中，同步的含义要更宽泛一些：它指的是事件之间的关系——任意数量的事件，以及任意种类的关系（之前、期间、之后）。
 
 程序员常常关心的是**同步约束**（synchronization constraints），也就是对事件先后顺序提出的要求。例如：

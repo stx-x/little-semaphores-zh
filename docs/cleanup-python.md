@@ -6,6 +6,8 @@ title: "清理 Python 线程"
 
 <div class="chap-en">Cleaning up Python Threads</div>
 
+<div class="chap-en">Cleaning up Python Threads</div>
+
 和其他许多线程环境相比，Python 的线程已经相当不错了，不过有几个特性让我很恼火。好在只要写一点清理代码，就能把它们修好。
 
 ## 信号量方法

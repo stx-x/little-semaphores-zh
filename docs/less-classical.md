@@ -6,6 +6,8 @@ title: "不太经典的问题"
 
 <div class="chap-en">Less Classical Synchronization Problems</div>
 
+<div class="chap-en">Less Classical Synchronization Problems</div>
+
 本题出自 Andrews 的《Concurrent Programming》[@andrews]。
 
 > 一个野蛮人部落用一口大锅共进晚餐，锅里能盛 M 份炖传教士[^1]。某个野蛮人想吃东西时，就从锅里自取一份，除非锅是空的。如果锅空了，这个野蛮人就去叫醒厨师，然后一直等到厨师把锅重新装满。
@@ -380,7 +382,7 @@ mutex.signal()
 最后离开的那位小精灵释放 `elfTex`，让下一批小精灵进入。
 :::
 
-## 合成 H$_2$O
+## 合成 H₂O
 
 至少十年来，这道题一直是加州大学伯克利分校操作系统课的保留题目。它似乎源自 Andrews《Concurrent Programming》中的一道练习 [@andrews]。
 
@@ -398,7 +400,7 @@ mutex.signal()
 
 **问题**：为氧线程和氢线程编写同步代码，满足上述约束。
 
-::: details 提示：H$_2$O
+::: details 提示：H₂O
 下面是我在解法中用到的变量：
 
 ```python title="Water building hint"
@@ -415,7 +417,7 @@ hydroQueue = Semaphore(0)
 `oxyQueue` 是氧线程等待的信号量，`hydroQueue` 是氢线程等待的信号量。这里沿用了队列的命名惯例：`oxyQueue.wait()` 的意思是「加入氧线程队列」，`oxyQueue.signal()` 的意思是「从队列中放出一个氧线程」。
 :::
 
-::: details 解答：H$_2$O
+::: details 解答：H₂O
 初始时 `hydroQueue` 和 `oxyQueue` 都是锁着的。氧线程到达时对 `hydroQueue` 发两次信号，让两个氢线程继续；然后氧线程等待氢线程到来。
 
 ```python title="Oxygen code"
@@ -468,7 +470,7 @@ barrier.wait()
 
 ## 过河问题
 
-本题出自加州大学伯克利分校 Anthony Joseph 编写的一份习题集，但我不确定他是否是最初的作者。它和 H$_2$O 问题类似，都是一种特殊的屏障，只允许线程以特定的组合通过。
+本题出自加州大学伯克利分校 Anthony Joseph 编写的一份习题集，但我不确定他是否是最初的作者。它和 H₂O 问题类似，都是一种特殊的屏障，只允许线程以特定的组合通过。
 
 在华盛顿州雷德蒙德附近，有一条小划艇供 Linux 黑客和微软员工（农奴，serfs）过河之用。这条渡船恰好能载四个人，多一个少一个都不开船。为了保证乘客安全，不允许让一个黑客和三个农奴同船，也不允许让一个农奴和三个黑客同船。其他任何组合都是安全的。
 

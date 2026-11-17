@@ -6,6 +6,8 @@ title: "C 语言中的同步"
 
 <div class="chap-en">Synchronization in C</div>
 
+<div class="chap-en">Synchronization in C</div>
+
 本节我们用 C 写一个多线程的同步程序。附录里给出了一些工具代码，我靠它们让 C 代码稍微好入口一点。本节的例子都依赖那些代码。
 
 ## 互斥

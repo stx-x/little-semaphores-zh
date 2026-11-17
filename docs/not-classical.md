@@ -6,6 +6,8 @@ title: "非经典问题"
 
 <div class="chap-en">Not-so-classical Problems</div>
 
+<div class="chap-en">Not-so-classical Problems</div>
+
 这道题出自 Andrews 的《并发编程》（*Concurrent Programming*）。
 
 > 三类线程共享对同一个单链表的访问：搜索者、插入者和删除者。搜索者只是查看链表，因此它们彼此之间可以并发执行。插入者把新项加到链表末尾；插入操作必须互斥，以免两个插入者几乎同时插入新项。不过，一次插入可以与任意多次搜索并行进行。最后，删除者从链表中的任意位置移除项。同一时刻至多只能有一个删除者进程访问链表，而且删除也必须与搜索和插入互斥。

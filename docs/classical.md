@@ -6,6 +6,8 @@ title: "经典同步问题"
 
 <div class="chap-en">Classical Synchronization Problems</div>
 
+<div class="chap-en">Classical Synchronization Problems</div>
+
 本章讨论几乎每本操作系统教材都会出现的那些经典问题。它们通常用现实世界中的场景来表述，这样问题的陈述清晰明了，学生也能凭借直觉去理解。
 
 不过，大多数情况下这些问题在现实中并不会真的发生；即便发生了，现实中的解决办法也和我们这里摆弄的这类同步代码相去甚远。

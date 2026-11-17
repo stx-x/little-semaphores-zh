@@ -6,6 +6,8 @@ title: "信号量"
 
 <div class="chap-en">Semaphores</div>
 
+<div class="chap-en">Semaphores</div>
+
 在现实生活中，信号量（semaphore）是一套用于视觉通信的信号系统，通常借助旗子、灯光或某种其他装置。在软件中，信号量是一种数据结构，可用于解决各种同步问题。
 
 信号量由埃兹格·迪杰斯特拉（Edsger Dijkstra）发明，他是一位以性情古怪著称的计算机科学家。自最初的设计以来，一些细节已有变化，但基本思想始终相同。

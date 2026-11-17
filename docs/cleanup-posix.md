@@ -6,6 +6,8 @@ title: "清理 POSIX 线程"
 
 <div class="chap-en">Cleaning up POSIX Threads</div>
 
+<div class="chap-en">Cleaning up POSIX Threads</div>
+
 本节介绍一些工具代码，我靠它们让 C 里的多线程稍微好写一点。前面 C 那一节的例子都基于这些代码。
 
 在 C 里最流行的线程标准，大概要算 POSIX 线程，简称 Pthreads。POSIX 标准定义了一套线程模型，以及创建和控制线程的接口。大多数版本的 UNIX 都提供了 Pthreads 的实现。

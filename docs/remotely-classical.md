@@ -6,6 +6,8 @@ title: "远非经典的问题"
 
 <div class="chap-en">Not Remotely Classical Problems</div>
 
+<div class="chap-en">Not Remotely Classical Problems</div>
+
 这个问题的灵感来自 Kenneth Reek 提出的一个问题 [@reek]。想象一家有 5 个座位的寿司店。如果你到的时候还有空位，你可以马上坐下。但如果你到的时候 5 个座位全满了，那就意味着这 5 个人是一起来的，你得等整拨人离开之后才能坐下。
 
 **问题**：为进入和离开寿司店的顾客编写代码，以满足这些要求。

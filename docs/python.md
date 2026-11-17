@@ -6,6 +6,8 @@ title: "Python 中的同步"
 
 <div class="chap-en">Synchronization in Python</div>
 
+<div class="chap-en">Synchronization in Python</div>
+
 借助伪代码，我们避开了现实世界中同步的一些丑陋细节。本章我们来看 Python 中真正的同步代码，下一章再看 C。
 
 Python 提供了相当好用的多线程环境，还自带 Semaphore 对象。它有一些小毛病，不过附录里有一段清理代码，能让情况稍微好一点。
