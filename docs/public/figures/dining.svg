@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="100%" style="max-width:420px">
+  <defs>
+    <style>
+      .table-top { fill: #f0f4f1; stroke: #9db5a8; stroke-width: 1.5; }
+      .phil { fill: #2d6a4f; }
+      .phil-label { font: 600 13px ui-sans-serif, system-ui, sans-serif; fill: #2d6a4f; text-anchor: middle; }
+      .fork { fill: #c9a227; stroke: #a4831c; stroke-width: 1; }
+      .fork-label { font: 500 11px ui-monospace, monospace; fill: #8a6d14; text-anchor: middle; }
+      .dish { fill: #ffffff; stroke: #c8d5cd; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- 圆桌 -->
+  <circle class="table-top" cx="210" cy="210" r="78"/>
+  <circle class="dish" cx="210" cy="210" r="30"/>
+  <text x="210" y="215" style="font:500 12px ui-sans-serif;fill:#7d9187;text-anchor:middle">圆桌</text>
+
+  <!-- 哲学家（半径 150，每 72°） -->
+  <g>
+    <circle class="phil" cx="210" cy="60" r="15"/>
+    <text class="phil-label" x="210" y="34">P0</text>
+
+    <circle class="phil" cx="352.8" cy="163.7" r="15"/>
+    <text class="phil-label" x="382" y="160">P1</text>
+
+    <circle class="phil" cx="298.3" cy="331.5" r="15"/>
+    <text class="phil-label" x="322" y="352">P2</text>
+
+    <circle class="phil" cx="121.7" cy="331.5" r="15"/>
+    <text class="phil-label" x="98" y="352">P3</text>
+
+    <circle class="phil" cx="67.2" cy="163.7" r="15"/>
+    <text class="phil-label" x="38" y="160">P4</text>
+  </g>
+
+  <!-- 叉子（半径 114，错开 36°） -->
+  <g>
+    <rect class="fork" x="202" y="89" width="16" height="16" rx="3" transform="rotate(0 210 97)"/>
+    <text class="fork-label" x="210" y="101" style="fill:#fff">F0</text>
+
+    <rect class="fork" x="307" y="166" width="16" height="16" rx="3" transform="rotate(72 315 174)"/>
+    <text class="fork-label" x="315" y="178" style="fill:#fff">F1</text>
+
+    <rect class="fork" x="265" y="295" width="16" height="16" rx="3" transform="rotate(144 273 303)"/>
+    <text class="fork-label" x="273" y="307" style="fill:#fff">F2</text>
+
+    <rect class="fork" x="139" y="295" width="16" height="16" rx="3" transform="rotate(216 147 303)"/>
+    <text class="fork-label" x="147" y="307" style="fill:#fff">F3</text>
+
+    <rect class="fork" x="97" y="166" width="16" height="16" rx="3" transform="rotate(288 105 174)"/>
+    <text class="fork-label" x="105" y="178" style="fill:#fff">F4</text>
+  </g>
+
+  <!-- 说明：P_i 右边是 F_i，左边是 F_{i+1} -->
+  <text x="210" y="404" style="font:400 12px ui-sans-serif;fill:#8a9a90;text-anchor:middle">哲学家 i 右手边是叉子 i，左手边是叉子 i+1</text>
+</svg>
