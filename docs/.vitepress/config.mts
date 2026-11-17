@@ -20,6 +20,7 @@ export default defineConfig({
   sitemap: { hostname: 'https://stx-x.github.io/little-semaphores-zh/' },
 
   markdown: {
+    math: true,
     lineNumbers: false,
     image: { lazyLoading: true },
     theme: { light: 'vitesse-light', dark: 'vitesse-dark' },
